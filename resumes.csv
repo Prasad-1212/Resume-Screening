@@ -1,0 +1,51 @@
+Candidate_ID,Name,Years_of_Experience,Education,Skills,Certifications,Resume_Text,Hired
+C001,Candidate 1,7,B.Sc,"TensorFlow, Python, Java",AWS Certified,Experienced in Python and Web Development. Worked on projects in Backend Development. Certifications: Google Cloud.,1
+C002,Candidate 2,4,PhD,"C++, NLP, Python",AWS Certified,Experienced in Python and Data Science. Worked on projects in Backend Development. Certifications: Google Cloud.,0
+C003,Candidate 3,13,B.Sc,"TensorFlow, React, C++",AWS Certified,Experienced in Python and Web Development. Worked on projects in NLP. Certifications: Google Cloud.,0
+C004,Candidate 4,11,PhD,"NLP, React, TensorFlow",AWS Certified,Experienced in C++ and Web Development. Worked on projects in NLP. Certifications: None.,0
+C005,Candidate 5,8,B.Tech,"NLP, SQL, Java",PMP,Experienced in Java and Machine Learning. Worked on projects in Computer Vision. Certifications: Google Cloud.,1
+C006,Candidate 6,13,M.Tech,"C++, TensorFlow, NLP",None,Experienced in C++ and Web Development. Worked on projects in Computer Vision. Certifications: AWS.,1
+C007,Candidate 7,5,M.Sc,"TensorFlow, Python, Java",None,Experienced in Java and Data Science. Worked on projects in NLP. Certifications: PMP.,1
+C008,Candidate 8,7,B.Tech,"Machine Learning, Java, TensorFlow",AWS Certified,Experienced in C++ and Data Science. Worked on projects in Computer Vision. Certifications: PMP.,1
+C009,Candidate 9,10,M.Sc,"React, NLP, Python",None,Experienced in C++ and Data Science. Worked on projects in NLP. Certifications: PMP.,0
+C010,Candidate 10,3,M.Tech,"SQL, React, NLP",None,Experienced in Python and Web Development. Worked on projects in NLP. Certifications: None.,1
+C011,Candidate 11,7,M.Tech,"NLP, SQL, React",AWS Certified,Experienced in Python and Web Development. Worked on projects in Computer Vision. Certifications: Google Cloud.,0
+C012,Candidate 12,11,B.Tech,"TensorFlow, C++, React",None,Experienced in Python and Web Development. Worked on projects in Backend Development. Certifications: None.,0
+C013,Candidate 13,11,M.Tech,"SQL, C++, Machine Learning",Scrum Master,Experienced in Python and Web Development. Worked on projects in Computer Vision. Certifications: None.,1
+C014,Candidate 14,8,PhD,"NLP, C++, SQL",Google Cloud,Experienced in Python and Machine Learning. Worked on projects in Backend Development. Certifications: None.,1
+C015,Candidate 15,5,M.Tech,"TensorFlow, Machine Learning, C++",Google Cloud,Experienced in Java and Machine Learning. Worked on projects in Backend Development. Certifications: AWS.,1
+C016,Candidate 16,4,M.Sc,"C++, Machine Learning, Java",AWS Certified,Experienced in Java and Web Development. Worked on projects in Backend Development. Certifications: None.,1
+C017,Candidate 17,8,M.Sc,"Python, C++, SQL",PMP,Experienced in C++ and Data Science. Worked on projects in NLP. Certifications: None.,1
+C018,Candidate 18,8,M.Sc,"Machine Learning, Python, React",AWS Certified,Experienced in C++ and Data Science. Worked on projects in Backend Development. Certifications: Google Cloud.,1
+C019,Candidate 19,3,M.Sc,"SQL, React, NLP",PMP,Experienced in Java and Web Development. Worked on projects in Backend Development. Certifications: Google Cloud.,1
+C020,Candidate 20,6,PhD,"Java, TensorFlow, Python",Google Cloud,Experienced in C++ and Web Development. Worked on projects in Computer Vision. Certifications: None.,1
+C021,Candidate 21,5,B.Sc,"TensorFlow, Python, SQL",AWS Certified,Experienced in C++ and Machine Learning. Worked on projects in Backend Development. Certifications: PMP.,0
+C022,Candidate 22,2,B.Tech,"NLP, TensorFlow, SQL",Scrum Master,Experienced in Java and Machine Learning. Worked on projects in Backend Development. Certifications: AWS.,1
+C023,Candidate 23,8,M.Sc,"Machine Learning, SQL, C++",None,Experienced in Java and Machine Learning. Worked on projects in Backend Development. Certifications: PMP.,1
+C024,Candidate 24,12,M.Tech,"C++, React, Java",PMP,Experienced in Java and Web Development. Worked on projects in Backend Development. Certifications: Google Cloud.,0
+C025,Candidate 25,14,M.Sc,"C++, Java, NLP",None,Experienced in Python and Web Development. Worked on projects in Backend Development. Certifications: AWS.,1
+C026,Candidate 26,6,M.Tech,"Machine Learning, Python, React",None,Experienced in Python and Machine Learning. Worked on projects in NLP. Certifications: Google Cloud.,0
+C027,Candidate 27,2,M.Tech,"TensorFlow, Python, Machine Learning",AWS Certified,Experienced in C++ and Machine Learning. Worked on projects in NLP. Certifications: PMP.,0
+C028,Candidate 28,12,M.Sc,"C++, TensorFlow, React",None,Experienced in C++ and Machine Learning. Worked on projects in Backend Development. Certifications: Google Cloud.,1
+C029,Candidate 29,5,PhD,"TensorFlow, NLP, SQL",Scrum Master,Experienced in C++ and Data Science. Worked on projects in Computer Vision. Certifications: Google Cloud.,0
+C030,Candidate 30,1,M.Tech,"SQL, Java, TensorFlow",None,Experienced in Java and Web Development. Worked on projects in NLP. Certifications: Google Cloud.,0
+C031,Candidate 31,12,M.Tech,"C++, NLP, SQL",AWS Certified,Experienced in C++ and Web Development. Worked on projects in Backend Development. Certifications: PMP.,0
+C032,Candidate 32,10,M.Sc,"C++, Java, Python",Scrum Master,Experienced in Python and Data Science. Worked on projects in NLP. Certifications: None.,0
+C033,Candidate 33,6,M.Tech,"NLP, TensorFlow, SQL",Google Cloud,Experienced in Java and Data Science. Worked on projects in Computer Vision. Certifications: Google Cloud.,1
+C034,Candidate 34,13,M.Tech,"Python, TensorFlow, NLP",None,Experienced in Java and Machine Learning. Worked on projects in Computer Vision. Certifications: None.,0
+C035,Candidate 35,12,M.Sc,"Machine Learning, SQL, TensorFlow",AWS Certified,Experienced in C++ and Web Development. Worked on projects in Backend Development. Certifications: Google Cloud.,1
+C036,Candidate 36,9,M.Sc,"React, Python, TensorFlow",Google Cloud,Experienced in Java and Machine Learning. Worked on projects in Backend Development. Certifications: PMP.,0
+C037,Candidate 37,1,B.Tech,"NLP, TensorFlow, SQL",Google Cloud,Experienced in C++ and Web Development. Worked on projects in Backend Development. Certifications: AWS.,0
+C038,Candidate 38,11,PhD,"NLP, Machine Learning, React",PMP,Experienced in C++ and Data Science. Worked on projects in Backend Development. Certifications: PMP.,0
+C039,Candidate 39,11,PhD,"Machine Learning, React, NLP",Scrum Master,Experienced in C++ and Web Development. Worked on projects in Backend Development. Certifications: Google Cloud.,0
+C040,Candidate 40,10,M.Tech,"C++, Python, TensorFlow",None,Experienced in C++ and Machine Learning. Worked on projects in NLP. Certifications: AWS.,1
+C041,Candidate 41,12,PhD,"Java, NLP, TensorFlow",AWS Certified,Experienced in C++ and Machine Learning. Worked on projects in Computer Vision. Certifications: None.,1
+C042,Candidate 42,12,M.Tech,"SQL, React, NLP",PMP,Experienced in C++ and Machine Learning. Worked on projects in Backend Development. Certifications: Google Cloud.,0
+C043,Candidate 43,14,B.Tech,"Machine Learning, SQL, TensorFlow",Scrum Master,Experienced in Java and Machine Learning. Worked on projects in Backend Development. Certifications: None.,0
+C044,Candidate 44,14,M.Sc,"Java, Python, TensorFlow",PMP,Experienced in Python and Machine Learning. Worked on projects in Backend Development. Certifications: PMP.,1
+C045,Candidate 45,14,M.Sc,"Machine Learning, Java, NLP",Scrum Master,Experienced in Java and Web Development. Worked on projects in Computer Vision. Certifications: Google Cloud.,0
+C046,Candidate 46,3,M.Sc,"Machine Learning, NLP, C++",Scrum Master,Experienced in Python and Data Science. Worked on projects in Computer Vision. Certifications: None.,0
+C047,Candidate 47,12,PhD,"TensorFlow, Python, Machine Learning",None,Experienced in C++ and Machine Learning. Worked on projects in Backend Development. Certifications: Google Cloud.,0
+C048,Candidate 48,7,B.Tech,"SQL, React, Machine Learning",Scrum Master,Experienced in Python and Data Science. Worked on projects in Computer Vision. Certifications: AWS.,1
+C049,Candidate 49,4,PhD,"TensorFlow, C++, NLP",PMP,Experienced in C++ and Web Development. Worked on projects in Computer Vision. Certifications: AWS.,1
+C050,Candidate 50,9,PhD,"TensorFlow, NLP, Python",Scrum Master,Experienced in Python and Data Science. Worked on projects in NLP. Certifications: Google Cloud.,1

@@ -1,0 +1,131 @@
+CID,NAME,SKILLS,EXPERIENCE,JOB_DESCRIPTION,CERTIFICATION,RELEVANT,ID
+C01,Candidate 1,"C,C++,Java",4,"Hiring for C, Java Developer",Certified in Java,1,nan
+C02,Candidate 2,"UI/UX, Web Development, Python",6,Hiring for Java,Certified in Python,0,nan
+C03,Candidate 3,"Java, Spring, Hibernate",5,Hiring for Java Developer,Certified in Java,1,nan
+C04,Candidate 4,"Python, Django",3,Hiring for Python Developer,Certified in Python,1,nan
+C05,Candidate 5,"Unity, Game Development",3,Hiring for API Developer,nan,0,nan
+C06,Candidate 6,"JavaScript, React, Node.js",4,Hiring for Frontend Developer,Certified in JavaScript,1,nan
+C07,Candidate 7,"PHP, Laravel, MySQL",5,Hiring for Backend Developer,Certified in PHP,1,nan
+C08,Candidate 8,"Data Analysis, SQL",2,Hiring for Game Developer,nan,0,nan
+C09,Candidate 9,"C, C++, Java",2,Hiring for Digital Marketing Expert,nan,0,nan
+C10,Candidate 10,"Kotlin, Android Development",5,Hiring for Android Developer,Certified in Android,1,nan
+C11,Candidate 11,"Go, Microservices",6,Hiring for Go Developer,Certified in Go,1,nan
+C12,Candidate 12,"Machine Learning, Python",2,Hiring for Blockchain Developer,nan,0,nan
+C13,Candidate 13,"Data Analysis, Python",4,Hiring for Data Analyst,Certified in Data Science,1,nan
+C14,Candidate 14,"Machine Learning, Python",5,Hiring for Machine Learning Engineer,Certified in Machine Learning,1,nan
+C15,Candidate 15,"DevOps, AWS, Docker",6,Hiring for DevOps Engineer,Certified in AWS,1,nan
+C16,Candidate 16,"PHP, Laravel",4,Hiring for Project Manager,nan,0,nan
+C17,Candidate 17,"Cloud Computing, AWS",1,Hiring for Salesforce Developer,nan,0,nan
+C18,Candidate 18,"Blockchain, Ethereum",3,Hiring for Blockchain Developer,Certified in Blockchain,1,nan
+C19,Candidate 19,"SEO, Digital Marketing",5,Hiring for Digital Marketing Expert,Certified in Digital Marketing,1,nan
+C20,Candidate 20,"Photography, Editing",3,Hiring for Photographer,Certified in Photography,0,nan
+C21,Candidate 21,"Graphic Design, Adobe Suite",4,Hiring for Graphic Designer,Certified in Graphic Design,1,nan
+C22,Candidate 22,"Content Writing, SEO",3,Hiring for Content Writer,Certified in Content Writing,1,nan
+C23,Candidate 23,"Testing, Selenium",5,Hiring for QA Engineer,Certified in Testing,1,nan
+C24,Candidate 24,"Kotlin, Android Development",2,Hiring for Data Analyst,nan,0,nan
+C25,Candidate 25,"Data Visualization, Tableau",3,Hiring for Data Visualization Expert,Certified in Tableau,1,nan
+C26,Candidate 26,"Cloud Computing, Azure",5,Hiring for Cloud Engineer,Certified in Azure,1,nan
+C27,Candidate 27,"API Development, Node.js",4,Hiring for API Developer,Certified in API Development,1,nan
+C28,Candidate 28,"Cooking, Baking",2,Hiring for Chef,Certified in Culinary Arts,0,nan
+C29,Candidate 29,"Unity, Game Development",4,Hiring for Game Developer,Certified in Game Development,1,nan
+C30,Candidate 30,"Teaching, Education",5,Hiring for Teacher,Certified in Education,0,nan
+C40,Candidate 40,"HTML, CSS, JavaScript",2,Hiring for Web Developer,Certified in Web Development,1,nan
+C41,Candidate 41,"Python, Django",1,Hiring for Graphic Designer,nan,0,nan
+C42,Candidate 42,"JavaScript, React",3,Hiring for QA Engineer,nan,0,nan
+C43,Candidate 43,"C#, .NET, SQL",7,Hiring for .NET Developer,Certified in C#,1,nan
+C44,Candidate 44,"Project Management, Agile",8,Hiring for Project Manager,Certified in PMP,1,nan
+C45,Candidate 45,"Salesforce, CRM",4,Hiring for Salesforce Developer,Certified in Salesforce,1,nan
+C46,Candidate 46,"Swift, iOS Development",3,Hiring for Cybersecurity Analyst,nan,0,nan
+C47,Candidate 47,"Cybersecurity, Network Security",7,Hiring for Security Analyst,Certified in Cybersecurity,1,nan
+C48,Candidate 48,"Go, Microservices",5,Hiring for Teaching,nan,0,nan
+C49,Candidate 49,"Testing, Selenium",6,Hiring for Chef,nan,0,nan
+C50,Candidate 50,"Swift, iOS Development",4,Hiring for iOS Developer,Certified in iOS,1,nan
+C51,Candidate 51,"Graphic Design, Adobe Suite",1,Hiring for Machine Learning Engineer,nan,0,nan
+C52,Candidate 52,"SEO, Digital Marketing",4,Hiring for Web Developer,nan,0,nan
+C53,Candidate 53,"Ruby, Rails",3,Hiring for Ruby Developer,Certified in Ruby,1,nan
+C54,Candidate 54,"Project Management, Agile",5,Hiring for Backend Developer,nan,0,nan
+C55,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring C, Java Developer",nan,1,nan
+C56,Shreya Vhanyalkar_Resume_new-1.pdf,"C++, Java, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C, Java Developer",nan,1,nan
+C57,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring C, Java Developer",nan,1,nan
+C58,Vikrant Mule_CV.pdf,nan,0,"Hiring C, Java Developer",nan,1,nan
+C59,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring C, Java Developer",nan,1,nan
+C60,Shreya Vhanyalkar_Resume_new-1.pdf,"C++, Java, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C, Java Developer",nan,1,nan
+C61,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring C, Java Developer",nan,1,nan
+C62,Vikrant Mule_CV.pdf,nan,0,"Hiring C, Java Developer",nan,1,nan
+C63,Vikrant Mule_CV.pdf,nan,0,"Hiring C, Java Developer",nan,1,nan
+C64,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring C, Java Developer",nan,1,nan
+C65,Shreya Vhanyalkar_Resume_new-1.pdf,"C++, Java, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C, Java Developer",nan,1,nan
+C66,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring C, Java Developer",nan,1,nan
+C67,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring C,C++ Developer",nan,1,nan
+C68,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring C,C++ Developer",nan,1,nan
+C69,Shreya Vhanyalkar_Resume_new-1.pdf,"C++, Java, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C70,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C71,Vikrant Mule_CV.pdf,nan,0,"Hiring C,C++ Developer",nan,0,nan
+C72,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring C,C++ Developer",nan,1,nan
+C73,Shreya Vhanyalkar_Resume_new-1.pdf,"C++, Java, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C74,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C75,Vikrant Mule_CV.pdf,nan,0,"Hiring C,C++ Developer",nan,0,nan
+C76,Vikrant Mule_CV.pdf,nan,0,Hiring UI/UX Developer,nan,0,nan
+C77,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,Hiring UI/UX Developer,nan,1,nan
+C78,Shreya Vhanyalkar_Resume_new-1.pdf,"C++, Java, SQL, Java, SQL, Java, C++, Java, Java",0,Hiring UI/UX Developer,nan,1,nan
+C79,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,Hiring UI/UX Developer,nan,1,nan
+C80,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C81,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C82,manjiri resume  (1).pdf,"React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,"Hiring C,C++ Developer",nan,1,nan
+C83,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring C,C++ Developer",nan,1,nan
+C84,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C85,Vikrant Mule_CV.docx,nan,0,"Hiring C,C++ Developer",nan,0,nan
+C86,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C87,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C88,manjiri resume .pdf,"React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,"Hiring C,C++ Developer",nan,1,nan
+C89,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring C,C++ Developer",nan,1,nan
+C90,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring C,C++ Developer",nan,1,nan
+C91,Vikrant Mule_CV.pdf,nan,0,"Hiring C,C++ Developer",nan,0,nan
+C92,Vikrant Mule_CV.pdf,nan,0,"Hiring Java, Python Developer",nan,0,nan
+C93,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring Java, Python Developer",nan,1,nan
+C94,manjiri resume .pdf,"React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,"Hiring Java, Python Developer",nan,1,nan
+C95,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring Java, Python Developer",nan,1,nan
+C96,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring Java, Python Developer",nan,1,nan
+C97,Vikrant Mule_CV.pdf,nan,0,Hiring UI/UX Developer,nan,0,nan
+C98,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,Hiring UI/UX Developer,nan,1,nan
+C99,manjiri resume .pdf,"React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,Hiring UI/UX Developer,nan,1,nan
+C100,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,Hiring UI/UX Developer,nan,1,nan
+C101,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,Hiring UI/UX Developer,nan,1,nan
+C102,Vikrant Mule_CV.pdf,nan,0,"Hiring  OOP, Machine Learning Developer",nan,0,nan
+C103,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring  OOP, Machine Learning Developer",nan,1,nan
+C104,manjiri resume .pdf,"React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,"Hiring  OOP, Machine Learning Developer",nan,1,nan
+C105,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring  OOP, Machine Learning Developer",nan,1,nan
+C106,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring  OOP, Machine Learning Developer",nan,1,nan
+C107,Vikrant Mule_CV.pdf,nan,0,"Hiring  OOPs, Machine Learning Developer",nan,0,nan
+C108,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,"Hiring  OOPs, Machine Learning Developer",nan,1,nan
+C109,manjiri resume .pdf,"React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,"Hiring  OOPs, Machine Learning Developer",nan,1,nan
+C110,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,"Hiring  OOPs, Machine Learning Developer",nan,1,nan
+C111,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,"Hiring  OOPs, Machine Learning Developer",nan,1,nan
+C112,Vikrant Mule_CV.pdf,nan,0,Hiring  Java Developer,nan,0,nan
+C113,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,Hiring  Java Developer,nan,1,nan
+C114,manjiri resume .pdf,"React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,Hiring  Java Developer,nan,1,nan
+C115,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,Hiring  Java Developer,nan,1,nan
+C116,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,Hiring  Java Developer,nan,1,nan
+C117,Vikrant Mule_CV.pdf,nan,0,Hiring Python Developer,nan,0,nan
+C118,Shreya Vhanyalkar_RESUME_F (1).pdf,"C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,Hiring Python Developer,nan,1,nan
+C119,manjiri resume .pdf,"React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,Hiring Python Developer,nan,1,nan
+C120,RESUME ANEESH DALVI FINAL.pdf,"C++, Java, Python, Java, Python, Java, Python",0,Hiring Python Developer,nan,1,nan
+C121,Vijay Mule_Resume.pdf,"C++, Python, Java, SQL, SQL, Java",0,Hiring Python Developer,nan,1,nan
+C122,"SHREYA VITTHAL VHANYALKAR
+shreyavhanyalkar","C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,Hiring Java Developer,nan,1,nan
+C123,"MANJIRI MARNE
+Bhusari colony","React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,Hiring Java Developer,nan,1,nan
+C124,"VIJAY POPAT MULE
+vijaymule","C++, Python, Java, SQL, SQL, Java",0,Hiring Java Developer,nan,1,nan
+C125,ANEESH DALVI,"C++, Java, Python, Java, Python, Java, Python",0,Hiring Java Developer,nan,1,nan
+C126,"Vikrant Popat Mule
+Voracious Learner",nan,0,Hiring Java Developer,nan,0,nan
+,"Vikrant Popat Mule
+Voracious Learner",None,0,Hiring Machine Learning (ML) Developer,None,0,C100
+,"SHREYA VITTHAL VHANYALKAR
+shreyavhanyalkar","C++, Java, Python, SQL, Java, SQL, Java, C++, Java, Java",0,Hiring Machine Learning (ML) Developer,None,1,C100
+,"MANJIRI MARNE
+Bhusari colony","React, Node.js, Python, C++, SQL, React, Node.js, Machine Learning, Python, Python",0,Hiring Machine Learning (ML) Developer,None,1,C100
+,"VIJAY POPAT MULE
+vijaymule","C++, Python, Java, SQL, SQL, Java",0,Hiring Machine Learning (ML) Developer,None,1,C100
+,ANEESH DALVI,"C++, Java, Python, Java, Python, Java, Python",0,Hiring Machine Learning (ML) Developer,None,1,C100
