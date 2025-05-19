@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-Based Resume Screening</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="static.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech-Based Resume Screening</h1>
+        
+        <label for="job_desc" class="jdlabel">Job Description:</label>
+        <textarea id="job_desc" required placeholder="Enter or speak the job description"></textarea>
+
+        <h2>Candidate Introduction</h2>
+        <label for="intro_text" class="introlabel">Speak Your Introduction:</label>
+        <button id="recordIntroButton" class="recordbutton">🎤 Start Recording</button>
+        <button id="stopIntroButton" class="recordbutton stopbutton" style="display:none;">⏹️ Stop Recording</button>
+        <p id="introTimer" class="timer"></p>
+        <textarea id="intro_text" placeholder="Your introduction will appear here..." readonly></textarea>
+
+        <button id="analyzeIntroButton" class="submitbutton">Analyze Introduction</button>
+
+        <div id="resultSection"></div>
+        <div class="error" id="errorMessage"></div>
+    </div>
+
+    <script>
+        let recognition, introTimerInterval, introStartTime;
+
+        $(document).ready(function () {
+            if ("webkitSpeechRecognition" in window) {
+                recognition = new webkitSpeechRecognition();
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                recognition.lang = "en-US";
+
+                recognition.onresult = function (event) {
+                    let transcript = event.results[0][0].transcript;
+                    $("#intro_text").val(transcript);
+                };
+
+                recognition.onerror = function (event) {
+                    $("#errorMessage").text("Speech recognition error: " + event.error);
+                };
+
+                recognition.onend = function () {
+                    $("#recordIntroButton").show();
+                    $("#stopIntroButton").hide();
+                    clearInterval(introTimerInterval);
+                    $("#introTimer").text("");
+                };
+            } else {
+                alert("Speech recognition is not supported in this browser. Try Chrome.");
+            }
+
+            $("#recordIntroButton").click(function () {
+                $("#recordIntroButton").hide();
+                $("#stopIntroButton").show();
+                introStartTime = Date.now();
+                introTimerInterval = setInterval(updateIntroTimer, 1000);
+                recognition.start();
+            });
+
+            $("#stopIntroButton").click(function () {
+                recognition.stop();
+            });
+
+            function updateIntroTimer() {
+                let elapsed = Math.floor((Date.now() - introStartTime) / 1000);
+                $("#introTimer").text("Recording Time: " + elapsed + " sec");
+            }
+
+            $("#analyzeIntroButton").click(function (event) {
+                event.preventDefault();
+                let formData = {
+                    job_desc: $("#job_desc").val(),
+                    intro_text: $("#intro_text").val()
+                };
+
+                if (!formData.job_desc || !formData.intro_text) {
+                    $("#errorMessage").text("Both job description and introduction are required.");
+                    return;
+                }
+
+                $.ajax({
+                    url: "/speech_intro_analyze",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(formData),
+                    success: function (response) {
+                        $("#errorMessage").text("");
+                        let totalScore = (response.intro_score + response.sentiment_score).toFixed(2);
+                        let resultHtml = "<h2>Introduction Scores</h2><table><tr><th>Introduction</th><th>Similarity Score</th><th>Sentiment Score</th><th>Total Score</th></tr>";
+                        resultHtml += `<tr><td>${formData.intro_text}</td><td>${response.intro_score}%</td><td>${response.sentiment_score}%</td><td>${totalScore}%</td></tr>`;
+                        resultHtml += "</table>";
+                        $("#resultSection").html(resultHtml);
+                    },
+                    error: function (xhr) {
+                        $("#errorMessage").text(xhr.responseJSON.error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

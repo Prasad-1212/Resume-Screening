@@ -1,0 +1,189 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f2f5, #e9ecef);
+    color: #333;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #34495e;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Labels */
+.jdlabel, .resumelabel, .introlabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Form Elements */
+textarea, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus, input[type="file"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #28a745, #2ecc71);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #218838, #27ae60);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.recordbutton {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.recordbutton:hover {
+    background: linear-gradient(90deg, #2980b9, #2471a3);
+}
+
+.stopbutton {
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.stopbutton:hover {
+    background: linear-gradient(90deg, #c0392b, #a93226);
+}
+
+/* Timer */
+.timer {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7f8c8d;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background: #34495e;
+    color: #fff;
+    font-weight: 600;
+}
+
+td {
+    background: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background: #f1f1f1;
+}
+
+/* Error Message */
+.error {
+    color: #e74c3c;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    textarea, input[type="file"] {
+        font-size: 14px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

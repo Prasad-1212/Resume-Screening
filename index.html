@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screening</title>
+    <link rel="stylesheet" href="static.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Resume Screening</h1>
+        
+        <form id="resumeForm" enctype="multipart/form-data">
+            <label for="job_desc" class="jdlabel">Job Description:</label>
+            <textarea name="job_desc" required placeholder="Enter the job description"></textarea>
+
+            <label for="resumes1" class="resumelabel">Upload Resume 1 (PDF, DOCX):</label>
+            <input type="file" name="resumes" required accept=".pdf, .docx">
+            <label for="resumes2" class="resumelabel">Upload Resume 2 (PDF, DOCX):</label>
+            <input type="file" name="resumes" required accept=".pdf, .docx">
+            <label for="resumes3" class="resumelabel">Upload Resume 3 (PDF, DOCX):</label>
+            <input type="file" name="resumes" required accept=".pdf, .docx">
+            <label for="resumes4" class="resumelabel">Upload Resume 4 (PDF, DOCX):</label>
+            <input type="file" name="resumes" required accept=".pdf, .docx">
+            <label for="resumes5" class="resumelabel">Upload Resume 5 (PDF, DOCX):</label>
+            <input type="file" name="resumes" required accept=".pdf, .docx">
+
+            <button type="submit" class="submitbutton">Analyze Resumes</button>
+        </form>
+
+        <h2>Optional: Speak Your Introduction</h2>
+        <label for="intro_text" class="introlabel">Record Introduction:</label>
+        <button id="recordIntroButton" class="recordbutton">🎤 Start Recording</button>
+        <button id="stopIntroButton" class="recordbutton stopbutton" style="display:none;">⏹️ Stop Recording</button>
+        <p id="introTimer" class="timer"></p>
+        <textarea id="intro_text" placeholder="Your introduction will appear here..." readonly></textarea>
+        <button id="analyzeIntroButton" class="submitbutton">Analyze Introduction</button>
+
+        <div id="resultSection"></div>
+        <div class="error" id="errorMessage"></div>
+    </div>
+
+    <script>
+        let recognition, introTimerInterval, introStartTime;
+
+        $(document).ready(function () {
+            // Resume Form Submission
+            $("#resumeForm").submit(function (event) {
+                event.preventDefault();
+                let formData = new FormData(this);
+
+                $.ajax({
+                    url: "/analyze",
+                    type: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        $("#errorMessage").text("");
+                        let resultHtml = "<h2>Resume Scores</h2><table><tr><th>Resume</th><th>Similarity Score</th><th>Sentiment Score</th><th>Total Score</th></tr>";
+                        response.resumes.forEach(resume => {
+                            let totalScore = (resume.score + resume.sentiment_score).toFixed(2);
+                            resultHtml += `<tr><td>${resume.filename}</td><td>${resume.score}%</td><td>${resume.sentiment_score}%</td><td>${totalScore}%</td></tr>`;
+                        });
+                        resultHtml += "</table>";
+                        $("#resultSection").html(resultHtml);
+                    },
+                    error: function (xhr) {
+                        $("#errorMessage").text(xhr.responseJSON.error);
+                    }
+                });
+            });
+
+            // Speech Recognition Setup
+            if ("webkitSpeechRecognition" in window) {
+                recognition = new webkitSpeechRecognition();
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                recognition.lang = "en-US";
+
+                recognition.onresult = function (event) {
+                    let transcript = event.results[0][0].transcript;
+                    $("#intro_text").val(transcript);
+                };
+
+                recognition.onerror = function (event) {
+                    $("#errorMessage").text("Speech recognition error: " + event.error);
+                };
+
+                recognition.onend = function () {
+                    $("#recordIntroButton").show();
+                    $("#stopIntroButton").hide();
+                    clearInterval(introTimerInterval);
+                    $("#introTimer").text("");
+                };
+            } else {
+                alert("Speech recognition is not supported in this browser. Try Chrome.");
+            }
+
+            $("#recordIntroButton").click(function () {
+                $("#recordIntroButton").hide();
+                $("#stopIntroButton").show();
+                introStartTime = Date.now();
+                introTimerInterval = setInterval(updateIntroTimer, 1000);
+                recognition.start();
+            });
+
+            $("#stopIntroButton").click(function () {
+                recognition.stop();
+            });
+
+            function updateIntroTimer() {
+                let elapsed = Math.floor((Date.now() - introStartTime) / 1000);
+                $("#introTimer").text("Recording Time: " + elapsed + " sec");
+            }
+
+            $("#analyzeIntroButton").click(function (event) {
+                event.preventDefault();
+                let formData = {
+                    job_desc: $("#resumeForm textarea[name='job_desc']").val(),
+                    intro_text: $("#intro_text").val()
+                };
+
+                if (!formData.job_desc || !formData.intro_text) {
+                    $("#errorMessage").text("Both job description and introduction are required.");
+                    return;
+                }
+
+                $.ajax({
+                    url: "/speech_intro_analyze",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(formData),
+                    success: function (response) {
+                        $("#errorMessage").text("");
+                        let totalScore = (response.intro_score + response.sentiment_score).toFixed(2);
+                        let resultHtml = "<h2>Introduction Scores</h2><table><tr><th>Introduction</th><th>Similarity Score</th><th>Sentiment Score</th><th>Total Score</th></tr>";
+                        resultHtml += `<tr><td>${formData.intro_text}</td><td>${response.intro_score}%</td><td>${response.sentiment_score}%</td><td>${totalScore}%</td></tr>`;
+                        resultHtml += "</table>";
+                        $("#resultSection").append(resultHtml);
+                    },
+                    error: function (xhr) {
+                        $("#errorMessage").text(xhr.responseJSON.error);
+                    }
+                });
+            });
+
+            window.onbeforeunload = function() {
+                $("#resultSection").empty();
+                $("#resumeForm")[0].reset();
+                $("#intro_text").val("");
+            };
+        });
+    </script>
+</body>
+</html>
